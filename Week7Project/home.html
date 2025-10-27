@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <title>Week 7 SQL Assignment</title>
+</head>
+<body>
+    CREATE TABLE Customers(<br>
+    id INTEGER PRIMARY KEY,<br>
+    name TEXT,<br>
+    membership_level TEXT<br>
+    );<br><br>
+
+    CREATE TABLE Rentals(<br>
+    id INTEGER PRIMARY KEY,<br>
+    customer_id INTEGER,<br>
+    movie_title TEXT,<br>
+    rental_price REAL,<br>
+    FOREIGN KEY (customer_id) REFERENCES customers(id)<br>
+    );<br><br>
+
+    INSERT INTO Customers (id, name, membership_level) VALUES<br>
+    (1, 'James Smith', 'Diamond'),<br>
+    (2, 'Spongebob Squarepants', 'Gold'),<br>
+    (3, 'Patrick Star', 'Pink'),<br>
+    (4, 'Eugene Crabs', 'Red'),<br>
+    (5, 'Squidward Tentacles', 'Blue');<br><br>
+
+    INSERT INTO Rentals (id, customer_id, movie_title, rental_price) VALUES <br>
+    (1, 1, 'Parasite', 4.99),<br>
+    (2, 2, 'Avengers: Infinity War', 3.99),<br>
+    (3, 3, 'Infinity Castle', 4.99),<br>
+    (4, 4, 'Fight Club', 2.99),<br>
+    (5, 5, 'Spirited Away', 5.99);<br><br>
+
+    SELECT * FROM Customers;<br><br>
+
+    SELECT * FROM Rentals;<br><br>
+
+    SELECT name, membership_level FROM Customers<br><br>
+
+    SELECT movie_title, rental_price FROM Rentals<br><br>
+
+    SELECT *<br>
+    FROM Customers<br>
+    JOIN Rentals ON Customers.id = Rentals.customer_id;<br>
+
+
+</body>
