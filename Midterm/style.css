@@ -1,0 +1,164 @@
+body{
+    font-family: Verdana, sans-serif;
+    background-color: #808080;
+    color: black;
+    margin: 10px;
+    padding: 0;
+    line-height: 1.6;
+}
+h1{
+    text-align: center;
+    background-color: #f5deb3;
+    color: black;
+    padding: 10px;
+    margin: 0;
+    font-size: 30px;
+}
+nav{
+    background-color: white;
+    text-align: center;
+    padding: 0;
+}
+nav a{
+    color: #808080;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav a:hover{
+    color: #38bdf8;
+}
+main{
+    padding: 0px;
+    max-width: 1000px;
+    margin: auto;
+}
+h2{
+    text-align: center;
+    color: yellow;
+    margin-bottom: 10px;
+}
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.project-card{
+    background-color: #f5deb3;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.project-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+ }
+.project-card a{
+    font-size: 25px;
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: bold;
+}
+.project-card a:hover{
+    text-decoration: underline;
+}
+.project-card p{
+    color: red;
+    margin-top: 5px;
+}
+footer{
+    text-align: center;
+    padding: 5px;
+    margin-top: 2rem;
+}
+footer a{
+    color: yellow;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+#dynamic-greeting{
+    text-align: center;
+    margin: 15px;
+    font-weight: bold;
+    color: yellow;
+    font-size: 20px;
+}
+#dark-mode-toggle{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #f5deb3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 1000;
+}
+#dark-mode-toggle:hover{
+    background-color: #38bdf8;
+    color: white;
+}
+.dark-mode{
+    background-color: black;
+    color: white;
+}
+.dark-mode h1{
+    background-color: #333;
+    color: white;
+}
+.dark-mode #dynamic-greeting{
+    color: lightblue;
+}
+.dark-mode #current-date{
+    color: #f5deb3;
+}
+#current-date{
+    text-align: center;
+    margin: 10px;
+    color: #f5deb3;
+    font-weight: bold;
+    font-size: 16px;
+}
+@media (max-width: 768 px){
+    body{
+        font-size: 14px;
+        margin: 5px;
+        line-height: 1.4;
+    }
+    h1{
+        font-size: 24px;
+        padding: 15px 10px;
+    }
+    nav{
+        padding: 10px;
+    }
+    nav a{
+        display: block;
+        margin: 8px;
+        padding: 8px;
+        font-size: 16px;
+    }
+    .project-grid{
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .project-card{
+        padding: 12px;
+    }
+    .project-card a{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    main{
+        padding: 0 5px;
+    }
+}
