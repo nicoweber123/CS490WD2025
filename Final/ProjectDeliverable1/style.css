@@ -90,3 +90,69 @@ footer{
         width: 140px;
     }
 }
+#dynamic-greeting {
+    text-align: center;
+    margin: 15px;
+    font-weight: bold;
+    color: yellow;
+    font-size: 20px;
+}
+#light-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #f5deb3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 1000;
+}
+    #light-mode-toggle:hover {
+        background-color: white;
+        color: black;
+    }
+.light-mode {
+    background-color: floralwhite;
+    color: black;
+}
+.light-mode header{
+    background-color: floralwhite;
+    color: black;
+}
+.light-mode nav {
+    background-color: floralwhite;
+}
+    .light-mode nav a {
+        color: black;
+    }
+    .light-mode footer {
+        background-color: floralwhite;
+        color: black;
+    }
+    .light-mode header h1{
+        background-color: floralwhite;
+        color: black;
+    }
+
+    .light-mode #dynamic-greeting{
+        background-color: floralwhite;
+        color: black;
+    }
+#scroll-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #f5deb3;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 1000;
+    font-weight: bold;
+}
+    #scroll-to-top:hover {
+        background-color: white;
+    }
